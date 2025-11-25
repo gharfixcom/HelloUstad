@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GharFix - Bahawalpur Home Services</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* --- SETTINGS --- */
+        :root {
+            --blue: #0056b3;
+            --green: #25D366;
+            --dark: #222;
+            --gray: #f9f9f9;
+            --gold: #FFD700;
+        }
+
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: #fff; color: var(--dark); }
+
+        /* --- HEADER & HERO --- */
+        .top-bar { background: var(--dark); color: white; text-align: center; padding: 8px; font-size: 0.9rem; }
+        header { background: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--blue); }
+        .call-btn { background: var(--blue); color: white; padding: 8px 20px; border-radius: 5px; text-decoration: none; font-weight: 600; }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; background-position: center; height: 450px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 20px;
+        }
+        .hero h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 10px; }
+        .hero p { font-size: 1.1rem; margin-bottom: 25px; color: #ddd; }
+        .whatsapp-btn { background: var(--green); color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); }
+
+        /* --- FEATURES & SERVICES --- */
+        .features { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 30px 5%; background: var(--gray); text-align: center; }
+        .feature-item { flex: 1; min-width: 150px; max-width: 300px; }
+        .feature-item i { font-size: 2rem; color: var(--blue); margin-bottom: 10px; }
+
+        .container { padding: 50px 5%; max-width: 1200px; margin: auto; }
+        .section-title { text-align: center; font-size: 1.8rem; font-weight: 700; margin-bottom: 10px; }
+        .section-subtitle { text-align: center; color: #666; margin-bottom: 40px; }
+
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: 1px solid #eee; }
+        .card img { width: 100%; height: 220px; object-fit: cover; } /* Height thori barha di hai */
+        .card-content { padding: 20px; }
+        .card h3 { margin: 0 0 8px; color: var(--blue); font-size: 1.2rem; }
+        .card p { font-size: 0.9rem; color: #555; line-height: 1.5; }
+
+        /* --- REVIEWS SECTION --- */
+        .reviews-section { background-color: #f0f8ff; padding: 60px 5%; text-align: center; }
+        .reviews-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px; }
+        .review-card { background: white; padding: 20px; border-radius: 10px; width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: left; }
+        .stars { color: var(--gold); margin-bottom: 10px; }
+        .review-text { font-style: italic; color: #555; font-size: 0.95rem; }
+        .customer-name { margin-top: 15px; font-weight: bold; color: var(--dark); display: flex; align-items: center; justify-content: space-between; }
+        .verified-badge { color: var(--green); font-size: 0.8rem; }
+
+        footer { background: #1a1a1a; color: white; text-align: center; padding: 40px 20px; margin-top: 0; }
+        .footer-contact a { color: white; text-decoration: none; font-weight: bold; }
+
+        @media (max-width: 600px) { .hero h1 { font-size: 1.8rem; } }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">Bahawalpur ki No.1 Home Service Agency</div>
+
+    <header>
+        <div class="logo"><i class="fas fa-tools"></i> GharFix</div>
+        <a href="tel:+923072777570" class="call-btn"><i class="fas fa-phone-alt"></i> Call Now</a>
+    </header>
+
+    <section class="hero">
+        <h1>Ghar ka har kaam,<br>Ab hua Asaan!</h1>
+        <p>Electrician, Plumber, AC Wala - Sab aik call par.</p>
+        <a href="https://wa.me/923072777570" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-item"><i class="fas fa-check-circle"></i><h4>Verified Workers</h4><p>Tasdeeq shuda karigar</p></div>
+        <div class="feature-item"><i class="fas fa-clock"></i><h4>Fast Service</h4><p>Jaldi kaam</p></div>
+        <div class="feature-item"><i class="fas fa-tags"></i><h4>Best Rates</h4><p>Munasib daam</p></div>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Hamari Services</h2>
+        <p class="section-subtitle">Hum ye sab kaam tasalli bakhash karte hain</p>
+        
+        <div class="services-grid">
+            
+            <!-- Electrician -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="Electrician">
+                <div class="card-content"><h3>Electrician (Bijli ka kaam)</h3><p>Wiring, Pankha, UPS setting aur Bijli ki her kharabi ka fori hal.</p></div>
+            </div>
+
+            <!-- Plumber (NEW IMAGE: Bathroom/Tap) -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Plumber Tap Repair">
+                <div class="card-content"><h3>Plumber (Nalka / Pipe)</h3><p>Pipe leakage, Motor repair, Tanki safai aur bathroom fitting.</p></div>
+            </div>
+
+            <!-- AC Service -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=600&q=80" alt="AC Service">
+                <div class="card-content"><h3>AC Service & Repair</h3><p>AC Gas refill, Service, Installation aur cooling problems ka hal.</p></div>
+            </div>
+
+            <!-- Carpenter (NEW IMAGE: Wood Work) -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1601058268499-e52658b8bb88?auto=format&fit=crop&w=600&q=80" alt="Carpenter Wood Work">
+                <div class="card-content"><h3>Carpenter (Lakri ka kaam)</h3><p>Furniture repair, Darwaze lock, Almari aur Lakri ka har kaam.</p></div>
+            </div>
+
+            <!-- Painter -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=600&q=80" alt="Painter">
+                <div class="card-content"><h3>Painter (Rang Roghan)</h3><p>Wall Putty, Distemper, Weather sheet aur Deco Paint services.</p></div>
+            </div>
+
+            <!-- Mason / Mistri (NEW IMAGE: Marble/Tiles) -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=600&q=80" alt="Marble Tiles Floor">
+                <div class="card-content">
+                    <h3>Mason (Mistri / Marble / Tiles)</h3>
+                    <p>Tiles, Marble, Chips, False Ceiling aur RCC Chatt ka pakka kaam.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- REVIEWS SECTION -->
+    <section class="reviews-section">
+        <h2 class="section-title">Log Kya Kehte Hain?</h2>
+        <p class="section-subtitle">Bahawalpur ke shehriyon ka bharosa</p>
+        
+        <div class="reviews-grid">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="review-text">"Maine AC service karwaya tha, ladka waqt par aya aur bohot acha kaam kiya. Recommended!"</p>
+                <div class="customer-name">- Ali Khan <i class="fas fa-check-circle verified-badge"></i></div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="review-text">"Electrician bohot mahir tha. UPS ki wiring ka masla 10 minute mein hal kar diya. Shukriya!"</p>
+                <div class="customer-name">- Usman Bhai <i class="fas fa-check-circle verified-badge"></i></div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="review-text">"Bahawalpur mein aisi service pehli baar dekhi. Ghar bethe Plumber mil gaya wo bhi munasib rate pe."</p>
+                <div class="customer-name">- Saima Bibi <i class="fas fa-check-circle verified-badge"></i></div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="review-text">"Carpenter ne Almari ke lock aur darwaze theek kiye. Bohot safai se kaam kiya."</p>
+                <div class="customer-name">- Ahmed Raza <i class="fas fa-check-circle verified-badge"></i></div>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="review-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                <p class="review-text">"Painter services bohot achi hain. Pura ghar paint karwaya, kaam time par khatam hua."</p>
+                <div class="customer-name">- Fahad Sheikh <i class="fas fa-check-circle verified-badge"></i></div>
+            </div>
+
+             <!-- Review 6 -->
+             <div class="review-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="review-text">"Tanki ki safai ke liye bulaya tha. Bohot mehnat se safai ki. 10/10 service."</p>
+                <div class="customer-name">- Mrs. Tanveer <i class="fas fa-check-circle verified-badge"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>GharFix - Bahawalpur</h3>
+        <p>Aapke Shehar ki sab se pur-aitemad Home Service Agency.</p>
+        <div class="footer-contact">
+            <p>Abhi Call Karein:</p>
+            <a href="tel:+923072777570"><i class="fas fa-phone-alt"></i> 0307-2777570</a>
+        </div>
+        <br>
+        <a href="https://wa.me/923072777570" style="color: #25D366; font-size: 1.5rem;">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+    </footer>
+
+</body>
+</html>
